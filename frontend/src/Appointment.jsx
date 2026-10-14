@@ -135,6 +135,7 @@ const Appointment = () => {
             <p className='flex items-center gap-2 text-3xl font-medium text-gray-700'>
               {docInfo.name} <img src={assets.verified_icon} alt="" />
             </p>
+            {docInfo.isDemo && <p className='mt-2 inline-block rounded-full bg-amber-100 px-3 py-1 text-xs text-amber-800'>Sample demo profile - not a real healthcare provider</p>}
             <div className='flex items-center gap-2 mt-1 text-gray-600'>
               <p>{docInfo.degree} - {docInfo.speciality}</p>
               <button className='py-0.5 px-2 border text-xs rounded-full'>{docInfo.experience}</button>
